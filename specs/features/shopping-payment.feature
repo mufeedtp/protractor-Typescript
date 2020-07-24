@@ -7,3 +7,4 @@ Feature: Shopping Payment
         Then I should see unit price "$1,801.00"
         And I should see Total price "$9,000.00"
         # And I should the see result
+         # And I should the see result
