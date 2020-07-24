@@ -30,6 +30,7 @@ When('I Add an item {string} to cart', async (item)=>{
 
 When('I go shopping cart', async ()=> {
     await _homePage.mouseHoverOnShoppingCart();
+    console.log("something");
     await _homePage.clickGoToCartButton();
 });
 
