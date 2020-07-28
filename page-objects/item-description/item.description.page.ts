@@ -32,6 +32,7 @@ export class ItemDescriptionPage extends basePage {
     //#region Public Methods
 
     public async addQuantity(quantity : number) {
+        await super.waitUntillElementClickable(this._itemDesciptionControls.quantityTextBox);
         await super.scrollIntoView(this._itemDesciptionControls.quantityTextBox);
         await super.enterText(this._itemDesciptionControls.quantityTextBox, quantity);
     }

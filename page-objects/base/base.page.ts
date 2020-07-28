@@ -37,7 +37,7 @@ export class basePage {
         let untilElementClickable = protractor.ExpectedConditions.elementToBeClickable(element);
         return await browser.driver.wait(async ()=> {
             return await browser.wait(untilElementClickable);
-        }, TIME_OUT.m);
+        }, TIME_OUT.xxl);
     }
     
     protected async getElementText(element: ElementFinder) {
